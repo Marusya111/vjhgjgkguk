@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
+    <title> Регистрация</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__row container">
+            <a href="index.html"><img src="img\7070.png" alt="logo" class="logo"></a>
+            <div class="header__panel">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li>
+                            <a href="about-us.html" class="menu__link">О нас</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="menu__link ">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="wtfu.html" class="menu__link">Где нас найти?</a>
+                        </li>
+                        <li>
+                            <a href="sert.html" class="menu__link">Сертификат</a>
+                        </li>
+                    </ul>
+                </nav>
+                    <div class="menu__list">
+                        <a href="login.html" class="menu__link">Вход</a>
+                        <a href="reg.html" class="menu__link active">Регистрация</a>
+                    </div>
+        </div>
+    </div></header>
+    <main class="main">
+        <div class="container reg-page">
+          <form class="reg__menu" action="https://mas1m0.github.io/jubilant-meme/registration.html#" method="post">
+              <h1 class="reg__title">Регистрация</h1>
+              <label for="item-name">Ваше имя</label>
+              <input type="text" name="name" id="item-name" required="">
+              <label for="item-surname">Ваша фамилия</label>
+              <input type="text" name="surname" id="item-surname" required="">
+              <label for="item-login">Логин</label>
+              <input type="text" name="login" id="item-login" required="">
+              <label for="item-email">Почта</label>
+              <input type="email" name="email" id="item-email" required="">
+              <label for="item-phone-number">Номер телефона</label>
+              <input type="tel" name="phone-number" id="item-phone-number" required="">
+              <label for="item-password">Пароль</label>
+              <input type="password" name="password" id="item-password" required="" minlength="6">
+            <label for="item-password_repeat">Повторите пароль</label>
+              <input type="password" name="password_repeat" id="item-password_repeat" required="" minlength="6">
+              <div class="rules__menu">
+                  <label for="item-rules">Согласие с правилами</label>
+                  <input type="checkbox" name="rules" id="item-rules" required="">
+              </div>
+              <button type="submit" class="reg__btn">Зарегистрироваться</button>
+          </form>
+    </div></main>
+
+</body></html>

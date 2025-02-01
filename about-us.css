@@ -1,0 +1,723 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+@font-face{
+  font-family: "Jura";
+  src: url(fonts/Jura-VariableFont_wght.ttf);
+}
+  body,html{
+    font-family: "Nunito";
+    height: 100%;
+    background:  aliceblue;
+  }
+  .wrapper
+  {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    max-width: 1110px;
+    margin: 0px auto;
+    padding: 0 20px;
+  }
+  .header{
+    width: 100%;
+    height: 100px;
+    background: rgb(157, 205, 238);
+    
+    
+  }
+  .menu{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo{
+    width: 150px;
+    height: 100px;
+  }
+  .menu__list{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+  }
+  .menu__link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .header__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__panel{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+  }
+  .active{
+    color: rgb(76, 141, 202);
+    text-decoration: none;
+  }
+  .course{
+    margin-top: 100px;
+    background: rgb(76, 141, 202);
+    border-radius: 25px;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 100px 
+  }
+  
+  .catalog__products{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  .course__img{
+    width: 200px;
+    height: 200px;
+  }
+  .course__title{
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+  }
+  .course__btn{
+    outline: 1px solid rgb(255, 255, 255);
+    width: 150px;
+    height: 65px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 25px
+  }
+  .about-us {
+    padding: 40px 0;
+    background-color:aliceblue;
+    color: #fff;
+  }
+  
+  .about-us__logo-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; 
+  }
+  
+  .about-us__logo {
+    max-width: 300px; 
+    height: auto; 
+    display: block;
+  }
+  
+  .about-us__title {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: aliceblue;
+  }
+  
+  .about-us__content {
+  text-align: center;
+    max-width: 800px; 
+    margin: 0 auto; 
+  }
+  
+  .about-us__slogan {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333; 
+    text-align: center;
+  }
+  
+  .about-us__description {
+    font-size: 16px;
+    color: #555; 
+    line-height: 1.6; 
+  }
+  .reviews {
+    padding: 40px 0;
+  }
+  
+  .reviews__title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+  }
+  
+  .reviews__list {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+  }
+  
+  .review {
+    background-color:rgb(76, 141, 202); 
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px  aliceblue; 
+  }
+  
+  
+  .review__author {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .review__date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .review__text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .contact-us {
+    padding: 40px 0;
+    color: #f8f8f8; 
+  }
+  
+  .contact-us__title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+  .contact-us__details {
+    text-align: center;
+    padding: 20px;
+    background: rgb(209, 209, 209);
+    color: #000000;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .contact-us__content {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+  }
+  
+  .contact-us__details p {
+    margin-bottom: 10px; 
+    line-height: 1.4;
+  }
+  
+  .contact-us__details strong {
+  display: block;
+  }
+  
+  
+  .contact-us__map {
+    width: 100%; 
+    
+  }
+  
+  .contact-us__map-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #fff;
+  }
+  .login {
+    padding: 40px 0;
+    flex: 1;
+  }
+  
+  .login__title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .login__form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login__form-group {
+    margin-bottom: 20px;
+  }
+  
+  .login__form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .login__form input[type="text"],
+  .login__form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .login__button-container {
+  width: 100%;
+  }
+  
+  .login__button {
+    display: block;
+    width: 100%; 
+    padding: 10px;
+    background-color:rgb(255, 170, 0);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box; 
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  
+  .login__button:hover {
+    background-color:rgb(255, 174, 0);
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .main{
+    background: aliceblue;
+    width: 100%;
+    height: 100%;
+    flex: 1 1 auto;
+  }
+  .main__questions{
+    width: 100%;
+    height: 600px;
+    padding-top: 80px;
+    margin-top: 80px;
+    background: white;
+    border-radius: 30px;
+  }
+  .question__title{
+    color: black;
+   
+    font-size: 40px;
+  }
+  .question__text{
+    color: black;
+   
+    font-size: 24px;
+  }
+  .reg-page{
+    display: flex;
+    justify-content: center;
+  }
+  .reg__menu{
+
+    background: #ffffff;
+    height: 750px;
+    width: 260px;
+    border-radius: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    columns: 2;
+  }
+  .reg__title{
+    color: black;
+    
+    padding-top: 30px;
+  }
+  label{
+    color: black;
+    
+    font-size: 20px;
+  }
+  #item-name{
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 230px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  #item-surname{
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 230px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #item-login{
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 230px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  #item-email{
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 230px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  #item-phone-number{
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 230px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  #item-password{
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 230px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  #item-password_repeat{
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 230px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .rules__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+  .reg__btn{
+    text-decoration: none;
+    color: rgb(1, 45, 49);   
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 250px;
+    background: rgb(255, 170, 0);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .product-card {
+    display: flex;
+    border: 1px solid #000000;
+    padding: 20px;
+    width: 600px;
+    margin: 20px auto;
+    height: 0 auto;
+}
+
+.product-image {
+    max-width: 600px; 
+    height: auto;
+}
+
+.product-info { 
+    margin-left: 20px; 
+    flex: 1; 
+    color: #f9f9f9;
+    
+}
+
+.product-title {
+    margin-top: 0; 
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(121, 121, 121);
+    margin-top: 5px;
+}
+
+.product-description {
+    margin-top: 10px;
+    width: 200px;
+    
+}
+.product__btn{
+  outline: 2px solid rgb(255, 170, 0);
+  width: 130px;
+  height: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+  color:rgb(0, 150, 27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 25px
+}
+.main__terms{
+  background: #222222;
+  color: rgb(255, 255, 255);
+}
+.section-heading{
+ color: #ffffff; 
+ border-bottom: 2px solid #eee; 
+ padding-bottom: 5px;
+}
+.section-text{
+  margin-bottom: 15px;
+}
+.section-list{
+list-style-type: disc;
+margin-left: 20px;
+}
+.section-list-item{
+margin-bottom: 5px;
+}
+@media (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+    .header__panel{
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: space-between;
+    }
+    .menu__list {
+        gap: 30px;
+    }
+    .course {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+    .catalog__products {
+      justify-content: space-around;
+   }
+   .product-card{
+       flex-direction: column;
+       width: 90%;
+   }
+   .product-image{
+       max-width: 100%;
+   }
+   .product-info{
+       margin-left: 0;
+   }
+   .reg__menu {
+    width: 80%;
+   }
+   .menu__list {
+    gap: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .header__panel{
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: space-between;
+    }
+    .menu__list {
+       gap: 20px;
+    }
+
+    .course {
+        width: calc(100% - 20px);
+    }
+    .reviews__list{
+    gap:10px;
+   }
+   .reviews__title{
+    font-size: 20px;
+   }
+   .review{
+    padding: 10px;
+   }
+   .contact-us__details{
+    padding: 10px;
+   }
+   .contact-us__title{
+    font-size: 20px;
+   }
+   .login__title{
+    font-size: 20px;
+   }
+   .login__form{
+    padding: 10px;
+   }
+   .reg__menu {
+    width: 80%;
+    height: auto;
+    gap: 10px;
+}
+  label{
+      font-size: 18px;
+  }
+  #item-name, #item-surname, #item-login, #item-email, #item-phone-number, #item-password, #item-password_repeat{
+      width: 80%;
+      font-size: 16px;
+  }
+
+   .reg__btn{
+    font-size: 18px;
+    width: 200px;
+   }
+   .product-card {
+        width: 95%;
+    }
+}
+
+
+@media (max-width:520px) {
+    .container {
+        max-width: 300px;
+        padding: 0 10px;
+    }
+    .header {
+      height: 150px;
+      flex-direction: row; 
+      justify-content: space-between;
+      
+  }
+    .menu__list {
+       flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .logo{
+        width: 120px;
+        height: 80px;
+    }
+    .menu__link{
+        font-size: 16px;
+    }
+    .course {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .course__img {
+        width: 150px;
+        height: 150px;
+    }
+    .course__title {
+        font-size: 16px;
+    }
+    .course__btn {
+        width: 120px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .about-us__logo {
+        max-width: 200px;
+    }
+    .about-us__title{
+        font-size: 28px;
+    }
+    .about-us__slogan{
+        font-size: 16px;
+    }
+    .about-us__description{
+        font-size: 14px;
+    }
+   .reviews__title{
+        font-size: 18px;
+       }
+     .review__author{
+        font-size: 16px;
+    }
+    .review__date{
+         font-size: 12px;
+    }
+    .review__text{
+        font-size: 14px;
+    }
+   .contact-us__title{
+        font-size: 18px;
+    }
+    .contact-us__details p {
+         font-size: 14px;
+     }
+    .login__title{
+        font-size: 18px;
+    }
+    .login__form{
+        padding: 10px;
+    }
+    .reg__menu {
+         width: 90%;
+         position: relative;
+         bottom: 10px;
+       }
+    .main__questions{
+        height: auto;
+      }
+    .question__title{
+        font-size: 28px;
+       }
+    .question__text{
+        font-size: 20px;
+       }
+     .product-card {
+        width: 95%;
+        padding: 10px;
+    }
+    .product__btn {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
